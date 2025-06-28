@@ -35,6 +35,7 @@ Gensyn is a decentralized platform and network designed to run and train machine
 - 1- Connect to web: To redirect you to a web based terminal of your GPU
 - 2- SSH Command: Copy the SSH command and Execute it in a terminal in your system (e.g. Windows Powershell, Mobaxterm, Termius)
 
+---
 
 ## Installation Steps
 ### Step 1: Install Dependecies
@@ -115,7 +116,7 @@ source .venv/bin/activate
 
 ## Done
 
-
+---
 
 ## Backup/Import swarm.pem
 
