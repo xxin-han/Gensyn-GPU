@@ -39,9 +39,7 @@ Gensyn is a decentralized platform and network designed to run and train machine
 ## Installation Steps
 ### Step 1: Install Dependecies
 ```bash
-curl -O https://raw.githubusercontent.com/xxin-han/Gensyn-GPU/main/Gensyn-GPU.sh
-chmod +x Gensyn-GPU.sh
-./Gensyn-GPU.sh
+wget https://github.com/xxin-han/Gensyn-GPU/raw/main/Gensyn-GPU.sh -O Gensyn-GPU.sh && chmod +x Gensyn-GPU.sh && ./Gensyn-GPU.sh
 ```
 
 ### Step 2: Clone the Repository
