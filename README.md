@@ -68,27 +68,41 @@ source .venv/bin/activate
 ./run_rl_swarm.sh
 ```
 
-### Step 4: Login
+### 🔐 Step 4: Login
 
-1- You have to receive Waiting for userData.json to be created... in logs
+1. **Wait for initialization:**
 
-2- Open login page in browser:
+   Make sure you see the following message in the terminal log:
 
-    - Open a new screen
-    - Install localtunnel
-        ```bash
-        npm install -g localtunnel
-        ```
-    - Get a password (ip GPU)
-        ```bash
-        curl https://loca.lt/mytunnelpassword
-        ```
-    - Get a URL
-        ```bash
-        lt --port 3000
-        ```
-    - Visit the prompted url, and enter your password to access Gensyn login page
-3- Answer prompts:
+   ```
+   Waiting for userData.json to be created...
+   ```
+
+2. **Open the login page in your browser:**
+
+   - Open a new terminal window or screen
+   - Install **localtunnel**:
+
+     ```bash
+     npm install -g localtunnel
+     ```
+
+   - Get your password (based on your GPU IP):
+
+     ```bash
+     curl https://loca.lt/mytunnelpassword
+     ```
+
+   - Generate your tunnel URL:
+
+     ```bash
+     lt --port 3000
+     ```
+
+   - Visit the displayed URL and enter your password to access the Gensyn login page.
+
+3. **Follow the prompts** to complete the login process.
+
 
 - Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N] >>> Press N to join testnet
 
