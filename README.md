@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/b250779f-8b1b-44cb-b831-59a3c7526d55)
 
 # 🧠 What is Gensyn?
 
@@ -58,10 +59,12 @@ screen -S swarm
 ```bash
 cd rl-swarm
 ```
-- make .venv
+- Crate environment
 ```bash
 python3 -m venv .venv
+source .venv/bin/activate
 ```
+
 - Install swarm
 ```bash
 ./run_rl_swarm.sh
@@ -131,9 +134,13 @@ Using WinSCP (Easiest graphical method)
 1. Official Dashboards
 https://dashboard.gensyn.ai/
 
+![image](https://github.com/user-attachments/assets/0af0d598-a9f0-427b-a48c-6a5e09cccd94)
+
 
 2. Telegram Bot
 - Search you ```Node-ID``` here with /check here: https://t.me/gensyntrackbot
+
+![image](https://github.com/user-attachments/assets/930368b9-ddcc-41d3-a186-37f82ed4c509)
 
 
 - If receiving ```EVM Wallet: 0x0000000000000000000000000000000000000000``` for long time is mean your onchain-participation is not being tracked and you have to Install with New Email and Back to Step 2: Clone Repository 
