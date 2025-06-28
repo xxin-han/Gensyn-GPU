@@ -57,7 +57,7 @@ screen -S swarm
 ```bash
 cd rl-swarm
 ```
-- Crate environment
+- Create environment
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
