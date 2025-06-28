@@ -68,7 +68,7 @@ source .venv/bin/activate
 ./run_rl_swarm.sh
 ```
 
-### 🔐 Step 4: Login
+### Step 4: Login
 
 1. **Wait for initialization:**
 
@@ -113,7 +113,7 @@ source .venv/bin/activate
     - dnotitia/Smoothie-Qwen3-1.7B
     - Gensyn/Qwen2.5-1.5B-Instruct
 
-### Done
+## Done
 
 
 
