@@ -70,6 +70,7 @@ python3 -m venv .venv
 ### Step 4: Login
 
 1- You have to receive Waiting for userData.json to be created... in logs
+
 2- Open login page in browser:
     - Open a new screen
     - Install localtunnel
