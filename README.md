@@ -23,6 +23,8 @@ Gensyn is a decentralized platform and network designed to run and train machine
 * I'm currently using [QuickPod](https://console.quickpod.io?affiliate=e6f6f62c-11bf-4673-84ff-61589a665d15) to rent GPU. You can choose between under official spec from Gensyn like RTX A2000, RTX 4060, dst.
 
 ### Rent QuickPod GPUs
+![image](https://github.com/user-attachments/assets/99fba47a-abda-4c95-bcf0-822624839931)
+
 - Visit [QuickPod](https://console.quickpod.io?affiliate=e6f6f62c-11bf-4673-84ff-61589a665d15)
 - Signup and verify your email in inbox
 - Deposit crytocurrency by clicking on Add in the top right
