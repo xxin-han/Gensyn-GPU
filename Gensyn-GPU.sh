@@ -43,27 +43,27 @@ success() {
 
 # ===================== MAIN SETUP ======================
 section "Memperbarui sistem"
-sudo apt update && sudo apt upgrade -y
+apt update && apt upgrade -y
 success "Update & upgrade"
 
 section "Menginstal paket umum"
-sudo apt install -y screen curl iptables build-essential git wget lz4 jq make gcc nano \
+apt install -y screen curl iptables build-essential git wget lz4 jq make gcc nano \
 automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev \
 libleveldb-dev tar clang bsdmainutils ncdu unzip
 success "Paket umum"
 
 section "Menginstal Python dan pip"
-sudo apt install -y python3 python3-pip python3-venv python3-dev
+apt install -y python3 python3-pip python3-venv python3-dev
 success "Python"
 
 section "Menginstal Node.js v22"
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+apt install -y nodejs
 node -v
 success "Node.js"
 
 section "Menginstal Yarn via npm"
-sudo npm install -g yarn
+npm install -g yarn
 yarn -v
 success "Yarn (npm)"
 
