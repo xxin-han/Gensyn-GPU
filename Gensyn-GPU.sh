@@ -56,12 +56,31 @@ section "Menginstal Python dan pip"
 apt install -y python3 python3-pip python3-venv python3-dev
 success "Python"
 
-section "Menginstal Node.js v22"
-curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
-apt install -y nodejs
-node -v
-success "Node.js"
+# ===================== FIX Node.js v20.18.0 ======================
+section "Menghapus Node.js lama (jika ada)"
+apt remove -y nodejs || true
+success "Node.js lama dihapus"
 
+section "Menginstal 'n' (Node version manager)"
+curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o /usr/local/bin/n
+chmod +x /usr/local/bin/n
+success "n diinstal"
+
+section "Menginstal Node.js versi 20.18.0"
+n 20.18.0
+success "Node.js v20.18.0 terinstal"
+
+section "Menambahkan Node.js ke PATH (jika perlu)"
+export PATH="/usr/local/bin:$PATH"
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+success "PATH disesuaikan"
+
+section "Cek versi akhir Node.js dan npm"
+node -v
+npm -v
+
+# ===================== Yarn ======================
 section "Menginstal Yarn via npm"
 npm install -g yarn
 yarn -v
