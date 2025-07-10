@@ -11,7 +11,6 @@ NC='\033[0m'
 # ===================== ASCII HEADER ======================
 echo -e "${ORANGE}"
 echo "                                                                                                         "
-echo "                                                                                                         "
 echo "                    XXXXXXX       XXXXXXX  iiii                         999999999          888888888     "
 echo "                    X:::::X       X:::::X i::::i                      99:::::::::99      88:::::::::88   "
 echo "                    X:::::X       X:::::X  iiii                     99:::::::::::::99  88:::::::::::::88 "
@@ -28,8 +27,6 @@ echo "   x:::::xx:::::x   X::::::X     X::::::Xi::::::i  n::::n    n::::n      9
 echo "  x:::::x  x:::::x  X:::::X       X:::::Xi::::::i  n::::n    n::::n     9::::::9       88:::::::::::::88 "
 echo " x:::::x    x:::::x X:::::X       X:::::Xi::::::i  n::::n    n::::n    9::::::9          88:::::::::88   "
 echo "xxxxxxx      xxxxxxxXXXXXXX       XXXXXXXiiiiiiii  nnnnnn    nnnnnn   99999999             888888888     "
-echo "                                                                                                         "
-echo "                                                                                                         "
 echo -e "${NC}"
 echo -e "${ORANGE}🚀 Welcome to the xXin98 Setup Script!${NC}"
 echo -e "${CYAN}🐦 Follow us on Twitter: @xXin98 ${NC}"
@@ -46,27 +43,27 @@ success() {
 
 # ===================== MAIN SETUP ======================
 section "Memperbarui sistem"
-apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 success "Update & upgrade"
 
 section "Menginstal paket umum"
-apt install -y screen curl iptables build-essential git wget lz4 jq make gcc nano \
+sudo apt install -y screen curl iptables build-essential git wget lz4 jq make gcc nano \
 automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev \
 libleveldb-dev tar clang bsdmainutils ncdu unzip
 success "Paket umum"
 
 section "Menginstal Python dan pip"
-apt install -y python3 python3-pip python3-venv python3-dev
+sudo apt install -y python3 python3-pip python3-venv python3-dev
 success "Python"
 
 section "Menginstal Node.js v22"
-curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
-apt install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs
 node -v
 success "Node.js"
 
 section "Menginstal Yarn via npm"
-npm install -g yarn
+sudo npm install -g yarn
 yarn -v
 success "Yarn (npm)"
 
@@ -82,4 +79,3 @@ success "PATH Yarn"
 
 # ===================== DONE ======================
 echo -e "\n${ORANGE}🎉 Instalasi selesai !${NC}"
-
